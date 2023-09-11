@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mymeimeja/pages/home_page.dart';
 import 'package:mymeimeja/pages/login_page.dart';
+import 'package:mymeimeja/pages/main_page.dart';
 import 'package:mymeimeja/styles/colors.dart';
 void main() => runApp(MyApp1());
 class MyApp1 extends StatelessWidget {
@@ -13,6 +14,7 @@ class MyApp1 extends StatelessWidget {
   routes: {
     '/':(context) => LoginPage(),
     '/home':(context) => HomePage(),
+    '/main':(context) => MainPage(),
   },);
   }
 }

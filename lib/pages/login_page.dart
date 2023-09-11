@@ -44,7 +44,7 @@ class LoginPage extends StatelessWidget {
         ,SizedBox(height: 30,),
         SizedBox(width: double.infinity,height: 48,
           child:
-        ElevatedButton(onPressed: ()=>Navigator.of(context).pushReplacementNamed('/home'),style: ElevatedButton.styleFrom(backgroundColor: Colors.amber,foregroundColor: Colors.black),child: const Text('Login'),),),
+        ElevatedButton(onPressed: ()=>Navigator.of(context).pushReplacementNamed('/main'),style: ElevatedButton.styleFrom(backgroundColor: Colors.amber,foregroundColor: Colors.black),child: const Text('Login'),),),
         const Text('or sign up with',style: TextStyle(color: Colors.white),),
         SizedBox(height: 40,),
            

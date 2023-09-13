@@ -9,7 +9,7 @@ class MyApp1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: AppColor.background,fontFamily: 'Urbanist'),
+      theme: ThemeData(scaffoldBackgroundColor: AppColor.background,fontFamily: 'Urbanist',brightness: Brightness.dark),
   initialRoute: '/',
   routes: {
     '/':(context) => LoginPage(),

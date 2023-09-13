@@ -1,35 +1,26 @@
 
 import 'package:flutter/material.dart';
 import 'package:mymeimeja/styles/colors.dart';
+import 'package:mymeimeja/styles/text.dart';
+import '../components/post_pages.dart';
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
+  HomePage({super.key});
+List <String> user = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('5minute flutter'),
-      backgroundColor: AppColor.background,
-      centerTitle: false,
-      actions: [Icon(Icons.location_on_outlined)],),
-      body: ListView(children: mockingUsers()));
+      appBar: Toolbar(),
+      body: ListView.builder(itemBuilder: (context, index){
+       return const AppPost();
+      }));
   }
-  List<Widget> mockingUsers(){
-        List <Widget> user = [];
+ mockingUsers(){
+        
         for(int i = 0 ; i < 1000; i ++){
-            user.add(users());
+            user.add('user number is $user');
         }
-        return user;
   }
-  Widget users(){
-    return Row(
-      children: [
-      Image.asset('assets/images/user.jpg',height: 50,width:50),
-      const SizedBox(width: 10,),
-      const Text('Kebede Debele',style:TextStyle(color: Colors.white),),
-      SizedBox(height: 10,)
-      ],
-    );
-  }
+  
 }
 
 

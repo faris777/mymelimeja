@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mymeimeja/pages/edit_profile_page.dart';
 import 'package:mymeimeja/pages/home_page.dart';
 import 'package:mymeimeja/pages/login_page.dart';
 import 'package:mymeimeja/pages/main_page.dart';
@@ -15,6 +16,7 @@ class MyApp1 extends StatelessWidget {
     '/':(context) => LoginPage(),
     '/home':(context) => HomePage(),
     '/main':(context) => MainPage(),
+    '/edit_profile':(context) => EditProfile()
   },);
   }
 }

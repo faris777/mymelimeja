@@ -15,6 +15,7 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
     body: pages[i],
      bottomNavigationBar: BottomNavigationBar(items: [
       BottomNavigationBarItem(icon: SvgPicture.asset('assets/svg/ic_home.svg'),label: 'Home'),

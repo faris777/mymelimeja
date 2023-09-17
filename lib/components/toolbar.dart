@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
 import '../styles/colors.dart';
 
-class toolbar extends StatelessWidget {
-  const toolbar({super.key});
+class Toolbar extends StatelessWidget implements PreferredSizeWidget{
+  final String title ;
+  final List<Widget>? actions;
+ const  Toolbar({super.key,required this.title, this.actions});
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(title: const Text('5minute flutter'),
+    return AppBar(title: Text(title),
       backgroundColor: AppColor.background,
       centerTitle: false,
-      actions:const [Icon(Icons.location_on_outlined)],);
+      actions: actions);
   }
+  
+  @override
+  Size get preferredSize => const Size.fromHeight(64);
+  
 }
